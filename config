@@ -1,6 +1,6 @@
 /*
-      Multi-Loc Config - Cinematic Edition
-      Proprietor: Missie
+      Multi-Loc Config - Master Edition
+      Proprietor: Dallas
 */
 
 var multiConfig = {
@@ -28,113 +28,80 @@ var roomstuff = {
       "rName": "The Front Door",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "roomtop": "<center><div style='position:relative; border:1px solid #d4af37; box-shadow: 0 0 25px #5c0000; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/Mikesfront.jpg' style='width:100%; display:block; filter: brightness(80%) contrast(110%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #d4af37; font-family:serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>Magic Mike's</h1><p style='color:#d4af37; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE PREMIER EXPERIENCE</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; letter-spacing:4px; margin-top:10px; border-top:1px double #d4af37; padding-top:10px;'>DRESS CODE: ELEGANT & BOLD</div>",
+      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #d4af37; padding:15px;'>The heavy scent of expensive cologne and anticipation hangs in the air. Beyond these doors, the world fades away, replaced by the rhythmic pulse of the bass and the promise of a night you won't forget. <br><b>DRESS CODE: ELEGANT & BOLD</b></div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#d4af37",
-      "link": "#fff",
-      "hlink": "#5c0000",
-      "selection": "red"
+      "color": "#d4af37"
     },
 
     "clubfloor": {
       "rName": "The Main Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/MMsmainstagetop.jpg' style='width:100%; display:block; filter: brightness(90%) contrast(120%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>The Main Stage</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE HEART OF THE SHOW</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; letter-spacing:3px; margin-top:10px; border-top:1px double #ff00ff; padding-top:10px;'>WELCOME TO THE MAIN EVENT</div>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #ff00ff; padding:15px;'>The heat of the spotlights meets the roar of the crowd. Every move is calculated, every beat is a heartbeat. You aren't just watching a performance; you are witnessing the raw power of the Magic Mike's legacy in motion.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#ff00ff",
-      "link": "#D8E8B8",
-      "hlink": "#CAB79A",
-      "selection": "red"
+      "color": "#ff00ff"
     },
 
     "stageedge": {
       "rName": "The Edge of the Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/MMsstageedgetop.jpg' style='width:100%; display:block; filter: brightness(80%) contrast(110%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>The Power Move</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE MOMENT OF TRUTH</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; letter-spacing:3px; margin-top:10px; border-top:1px double #ff00ff; padding-top:10px;'>WHERE LEGENDS ARE MADE</div>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #ff00ff; padding:15px;'>Close enough to feel the vibration of the music in your chest. Here at the edge, the barrier between the audience and the artist dissolves. It’s intimate, intense, and where the most daring legends are forged under purple neon.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#ff00ff",
-      "link": "#F2DEA0",
-      "hlink": "#E3DDCF",
-      "selection": "red"
+      "color": "#ff00ff"
     },
 
     "viplounge": {
       "rName": "VIP Lounge",
       "backgroundImage": "https://soi-designin.hyperchat.com/VIPLoungeback.jpg",
-      "chatleft": "<img src='https://soi-designin.hyperchat.com/VIPLoungesidechatpic.jpg'>",
       "roomtop": "<center><div style='position:relative; border:2px solid #d4af37; box-shadow: 0 0 20px #000; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/VIPLoungeTopuse.jpg' style='width:100%; display:block;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #d4af37; font-family:serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>The Exclusive Reserve</h1><p style='color:#d4af37; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | TOP TIER ACCESS</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; letter-spacing:3px; margin-top:10px; border-top:1px double #d4af37; padding-top:10px;'>PRIVATE RESERVE FOR THE INNER CIRCLE</div>",
+      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #d4af37; padding:15px;'>Elevated above the chaos, the VIP Lounge offers a sanctuary of leather, gold, and crystal. Crystal-clear views of the stage paired with premium service make this the only place for those who demand the absolute best.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#050505",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#d4af37",
-      "link": "#F2DEA0",
-      "hlink": "#E3DDCF",
-      "selection": "red"
+      "color": "#d4af37"
     },
 
     "backstage": {
       "rName": "Back Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMsbackstagebackground.jpg",
       "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/MMsbackstagetop.jpg' style='width:100%; display:block;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>In The Wings</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE QUIET BEFORE THE STORM</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; letter-spacing:3px; margin-top:10px; border-top:1px double #ff00ff; padding-top:10px;'>THE TENSION IS PALPABLE</div>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #ff00ff; padding:15px;'>Away from the roar of the crowd, the air is thick with focus and the scent of adrenaline. This is where the magic is prepped, where the sweat is wiped away, and where the performers center themselves before stepping back into the light.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#ff00ff",
-      "link": "#F2DEA0",
-      "hlink": "#E3DDCF",
-      "selection": "red"
+      "color": "#ff00ff"
     },
 
     "afterhours": {
       "rName": "After Hours Club",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%; display:block;'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:5px; text-transform:uppercase; margin:0;'>Noir & Neon</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE LATE NIGHT PULSE</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; letter-spacing:3px; margin-top:10px; border-top:1px double #ff00ff; padding-top:10px;'>THE NIGHT TRULY BEGINS</div>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px double #ff00ff; padding:15px;'>When the main doors close, the real night begins. A haven for the night owls and the secret-keepers, where the drinks flow as smoothly as the conversation and the neon glow never fades until the sun comes up.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#ff00ff",
-      "link": "#F2DEA0",
-      "hlink": "#E3DDCF",
-      "selection": "red"
+      "color": "#ff00ff"
     },
 
     "interviewsuite": {
       "rName": "The Interview Suite",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/Mlounge.jpg' style='width:100%; display:block; filter: brightness(70%) contrast(110%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:15px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:4px; text-transform:uppercase; margin:0;'>The Interview Suite</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin:0;'>EST. 2026 | WHERE THE FUTURE BEGINS</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#888; font-size:11px; letter-spacing:3px; margin-top:10px; border-top:1px solid #333; padding-top:10px;'>SHHH... PRIVATE AUDITIONS IN PROGRESS</div>",
+      "roombottom": "<div style='text-align:center; color:#888; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:10px; border-top:1px solid #333; padding:15px;'>Under the watchful glow of the vertical neon, careers are born. This is the vetting ground, a place of high standards and higher rewards. If you have what it takes, this is where your journey starts.</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#ff00ff",
-      "link": "#aaa",
-      "hlink": "#fff",
-      "selection": "red"
+      "color": "#ff00ff"
     },
 
     "privateoffice": {
       "rName": "Dallas's Private Office",
       "backgroundImage": "https://www.transparenttextures.com/patterns/dark-leather.png",
       "roomtop": "<center><div style='position:relative; border:2px solid #d4af37; box-shadow: 0 0 20px #000; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/Minteroffice.jpg' style='width:100%; display:block; filter: contrast(105%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.9)); padding:20px;'><h1 style='color:#fff; text-shadow: 0 0 10px #d4af37; font-family:serif; letter-spacing:6px; text-transform:uppercase; margin:0;'>The Proprietor's Sanctum</h1><p style='color:#d4af37; font-size:10px; letter-spacing:2px; margin-top:5px;'>EST. 2026 | THE VIEW FROM THE TOP</p></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; letter-spacing:3px; margin-top:15px; border-top:1px solid #d4af37; padding-top:10px;'>VANCE IS STATIONED AT THE DOOR | PRIVATE AUDIENCES ONLY</div>",
+      "roombottom": "<div style='text-align:center; color:#d4af37; font-size:12px; line-height:1.6; letter-spacing:2px; margin-top:15px; border-top:1px solid #d4af37; padding:15px;'>The seat of power. From here, every gear in the Magic Mike's machine is visible. A place of quiet luxury, heavy decisions, and absolute authority. Entry is by invitation only. <br><b>VANCE IS STATIONED AT THE DOOR</b></div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#050505",
-      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
-      "color": "#d4af37",
-      "link": "#d4af37",
-      "hlink": "#f1f1f1",
-      "selection": "red"
+      "color": "#d4af37"
     }
   }
 };
