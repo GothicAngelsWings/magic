@@ -136,23 +136,20 @@ var roomstuff = {
       "inputTextColor_Default": "#F2DEA0"
     },
 
-    "interviewsuite": {
-      "rName": "Public Interview Suite",
+  "interviewsuite": {
+      "rName": "The Interview Suite",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "chatleft": "",
       "underchat": "",
-      "roomtop": "<center><div style='position:relative;'><img src='https://i.ibb.co/3ykG2zS/Dallas-private-office-top.jpg' style='filter: brightness(40%) contrast(120%); border:1px solid #ff00ff;'><div style='position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#f1f1f1; text-shadow:0 0 10px #ff00ff; font-size:24px; font-weight:bold; width:100%;'>INTERVIEW IN PROGRESS</div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:11px;'>PLEASE REMAIN SEATED UNTIL THE PROPRIETOR ADDRESSES YOU</div>",
-      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
-      "innerBGColor": "#1a001a",
+      "roomtop": "<center><div style='position:relative; border:2px solid #ff00ff; box-shadow: 0 0 15px #ff00ff; overflow:hidden;'><img src='https://soi-designin.hyperchat.com/Mlounge.jpg' style='width:100%; display:block; filter: brightness(70%) contrast(110%);'><div style='position:absolute; bottom:0; width:100%; background:linear-gradient(transparent, rgba(0,0,0,0.8)); padding:15px;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff; font-family:sans-serif; letter-spacing:4px; text-transform:uppercase; margin:0;'>The Interview Suite</h1><p style='color:#ff00ff; font-size:10px; letter-spacing:2px; margin:0;'>WHERE THE FUTURE BEGINS</p></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#888; font-size:11px; letter-spacing:3px; margin-top:10px;'>SHHH... PRIVATE AUDITIONS IN PROGRESS</div>",
+      "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
+      "innerBGColor": "#0a0a0a",
       "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
       "color": "#ff00ff",
-      "link": "#ff00ff",
-      "hlink": "#f1f1f1",
-      "selection": "red",
-      "inputBorderColor_Default": "#ff00ff",
-      "inputBGColor_Default": "#000000",
-      "inputTextColor_Default": "#f1f1f1"
+      "link": "#aaa",
+      "hlink": "#fff",
+      "selection": "red"
     },
 
 "privateoffice": {
