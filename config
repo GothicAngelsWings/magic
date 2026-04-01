@@ -1,0 +1,187 @@
+/*
+     Multi-Loc Config
+     Originally by Athelon
+     Modified by Withheld
+*/
+
+var multiConfig = {
+  "THISROOM": "magicmikes",
+  "locationColor": "red",
+  "locationBackground": "green",
+  "currentView": "",
+  "viewList": [
+    "entrance",
+    "clubfloor",
+    "stageedge",
+    "viplounge",
+    "backstage",
+    "afterhours",
+    "interviewsuite",
+    "privateoffice"
+  ],
+  "defaultView": "entrance"
+};
+
+var roomstuff = {
+  "rooms": {
+
+    "entrance": {
+      "rName": "The Front Door",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><div style='position:relative; border:1px solid #333; box-shadow: 0 0 20px #000;'><img src='https://i.ibb.co/6P2Tz9F/magic-mikes-exterior.jpg' style='width:100%; filter: brightness(70%);'><div style='position:absolute; bottom:20px; width:100%; text-align:center;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; font-family:sans-serif; letter-spacing:8px; text-transform:uppercase;'>Magic Mike's</h1></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#555; font-size:12px; letter-spacing:4px; margin-top:10px;'>DRESS CODE ENFORCED | 21+ ONLY</div>",
+      "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
+      "innerBGColor": "#0a0a0a",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#888",
+      "link": "#aaa",
+      "hlink": "#fff",
+      "selection": "red"
+    },
+
+    "clubfloor": {
+      "rName": "The Magic Mikes",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><img src='https://soi-designin.hyperchat.com/MMsmainstagetop.jpg'></center>",
+      "roombottom": "",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#1D2B14",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#D8E8B8",
+      "link": "#D8E8B8",
+      "hlink": "#CAB79A",
+      "selection": "red",
+      "inputBorderColor_Default": "#D8E8B8",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#D8E8B8"
+    },
+
+    "stageedge": {
+      "rName": "The Edge of the Stage",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMsafterhourstopuseforsure.jpg",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><img src='https://soi-designin.hyperchat.com/MMsstageedgetop.jpg'></center>",
+      "roombottom": "",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#3F2419",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#F2DEA0",
+      "link": "#F2DEA0",
+      "hlink": "#E3DDCF",
+      "selection": "red",
+      "inputBorderColor_Default": "#F2DEA0",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#F2DEA0"
+    },
+
+    "viplounge": {
+      "rName": "VIP Lounge",
+      "backgroundImage": "https://soi-designin.hyperchat.com/VIPLoungeback.jpg",
+      "chatleft": "<img src='https://soi-designin.hyperchat.com/VIPLoungesidechatpic.jpg'>",
+      "underchat": "",
+      "roomtop": "<center><img src='https://soi-designin.hyperchat.com/VIPLoungeTopuse.jpg'></center>",
+      "roombottom": "",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#3E2C22",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#F2DEA0",
+      "link": "#F2DEA0",
+      "hlink": "#E3DDCF",
+      "selection": "red",
+      "inputBorderColor_Default": "#F2DEA0",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#F2DEA0"
+    },
+
+    "backstage": {
+      "rName": "Back Stage",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMsbackstagebackground.jpg",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><img src='https://soi-designin.hyperchat.com/MMsbackstagetop.jpg'></center>",
+      "roombottom": "",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#371F03",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#F2DEA0",
+      "link": "#F2DEA0",
+      "hlink": "#E3DDCF",
+      "selection": "red",
+      "inputBorderColor_Default": "#F2DEA0",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#F2DEA0"
+    },
+
+    "afterhours": {
+      "rName": "After Hours Club",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMsafterhourstopuseforsure.jpg",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg'></center>",
+      "roombottom": "",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#2A2D40",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#F2DEA0",
+      "link": "#F2DEA0",
+      "hlink": "#E3DDCF",
+      "selection": "red",
+      "inputBorderColor_Default": "#F2DEA0",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#F2DEA0"
+    },
+
+    "interviewsuite": {
+      "rName": "Public Interview Suite",
+      "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><div style='position:relative;'><img src='https://i.ibb.co/3ykG2zS/Dallas-private-office-top.jpg' style='filter: brightness(40%) contrast(120%); border:1px solid #ff00ff;'><div style='position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#f1f1f1; text-shadow:0 0 10px #ff00ff; font-size:24px; font-weight:bold; width:100%;'>INTERVIEW IN PROGRESS</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff; font-size:11px;'>PLEASE REMAIN SEATED UNTIL THE PROPRIETOR ADDRESSES YOU</div>",
+      "borderBGImage": "https://soi-designin.hyperchat.com/musicbg2-gj.png",
+      "innerBGColor": "#1a001a",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#ff00ff",
+      "link": "#ff00ff",
+      "hlink": "#f1f1f1",
+      "selection": "red",
+      "inputBorderColor_Default": "#ff00ff",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#f1f1f1"
+    },
+
+    "privateoffice": {
+      "rName": "Dallas's Private Office",
+      "backgroundImage": "https://www.transparenttextures.com/patterns/dark-leather.png",
+      "chatleft": "",
+      "underchat": "",
+      "roomtop": "<center><img src='https://i.ibb.co/3ykG2zS/Dallas-private-office-top.jpg' style='border:1px solid #d4af37; box-shadow: 0 0 15px #000;'></center><div style='text-align:center; color:#d4af37; font-family:serif; font-style:italic; font-size:20px; margin-top:10px;'>Proprietor's Private Sanctum</div>",
+      "roombottom": "<div style='text-align:center; color:#5c0000; font-size:12px; letter-spacing:2px;'>VANCE IS ON DUTY</div>",
+      "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
+      "innerBGColor": "#050505",
+      "innerHRImage": "https://soi-designin.hyperchat.com/00maxs.jpg",
+      "color": "#d4af37",
+      "link": "#d4af37",
+      "hlink": "#f1f1f1",
+      "selection": "red",
+      "inputBorderColor_Default": "#5c0000",
+      "inputBGColor_Default": "#000000",
+      "inputTextColor_Default": "#d4af37"
+    },
+
+    "Rooms": {
+      "rDisable": "disabled",
+      "rName": "Rooms"
+    },
+
+    "Code3": {
+      "rName": "vGraphic",
+      "roomId": "vgraphic@soi"
+    }
+  }
+};
