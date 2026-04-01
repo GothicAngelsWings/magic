@@ -25,12 +25,12 @@ var multiConfig = {
 var roomstuff = {
   "rooms": {
 
-    "entrance": {
+   "entrance": {
       "rName": "The Front Door",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
       "chatleft": "",
       "underchat": "",
-      "roomtop": "<center><div style='position:relative; border:1px solid #333; box-shadow: 0 0 20px #000;'><img src='https://i.ibb.co/6P2Tz9F/magic-mikes-exterior.jpg' style='width:100%; filter: brightness(70%);'><div style='position:absolute; bottom:20px; width:100%; text-align:center;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; font-family:sans-serif; letter-spacing:8px; text-transform:uppercase;'>Magic Mike's</h1></div></div></center>",
+      "roomtop": "<center><div style='position:relative; border:1px solid #333; background:#000; overflow:hidden;'><img src='https://i.ibb.co/6P2Tz9F/magic-mikes-exterior.jpg' style='width:100%; display:block; filter: brightness(60%);'><div style='position:absolute; bottom:20px; width:100%; text-align:center;'><h1 style='color:#fff; text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff; font-family:sans-serif; letter-spacing:8px; text-transform:uppercase; margin:0;'>Magic Mike's</h1></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#555; font-size:12px; letter-spacing:4px; margin-top:10px;'>DRESS CODE ENFORCED | 21+ ONLY</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#0a0a0a",
@@ -155,12 +155,12 @@ var roomstuff = {
       "inputTextColor_Default": "#f1f1f1"
     },
 
-    "privateoffice": {
+"privateoffice": {
       "rName": "Dallas's Private Office",
       "backgroundImage": "https://www.transparenttextures.com/patterns/dark-leather.png",
       "chatleft": "",
       "underchat": "",
-      "roomtop": "<center><img src='https://i.ibb.co/3ykG2zS/Dallas-private-office-top.jpg' style='border:1px solid #d4af37; box-shadow: 0 0 15px #000;'></center><div style='text-align:center; color:#d4af37; font-family:serif; font-style:italic; font-size:20px; margin-top:10px;'>Proprietor's Private Sanctum</div>",
+      "roomtop": "<center><img src='https://i.ibb.co/3ykG2zS/Dallas-private-office-top.jpg' style='width:100%; border:1px solid #d4af37; box-shadow: 0 0 15px #000;'></center><div style='text-align:center; color:#d4af37; font-family:serif; font-style:italic; font-size:20px; margin-top:10px;'>Proprietor's Private Sanctum</div>",
       "roombottom": "<div style='text-align:center; color:#5c0000; font-size:12px; letter-spacing:2px;'>VANCE IS ON DUTY</div>",
       "borderBGImage": "https://soi-cchome.hyperchat.com/dontdelete.png",
       "innerBGColor": "#050505",
@@ -173,7 +173,6 @@ var roomstuff = {
       "inputBGColor_Default": "#000000",
       "inputTextColor_Default": "#d4af37"
     },
-
     "Rooms": {
       "rDisable": "disabled",
       "rName": "Rooms"
