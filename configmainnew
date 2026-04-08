@@ -86,9 +86,8 @@ var roomstuff = {
 
    "privateoffice": {
       "rName": "Dallas's Private Office",
-      "backgroundImage": "https://soi-designin.hyperchat.com/Minteroffice_personal_background.jpg",
-      // *** THE REST REMAINS THE SAME ***
-      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/Minteroffice.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The brain of the operation. Behind the glass and the dark wood, Dallas keeps the chaos in check. It's quiet here, but the authority is absolute. <br><b>BY INVITATION ONLY. VANCE IS WATCHING.</b></div></div></center>",
+      "backgroundImage": "https://soi-designin.hyperchat.com/e903ad385afdcd6e91ff4df47b697722.jpg",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/privateofficetop.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The brain of the operation. Behind the glass and the dark wood, Dallas keeps the chaos in check. It's quiet here, but the authority is absolute. <br><b>BY INVITATION ONLY. VANCE IS WATCHING.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ ACCESS WHISPER BOX ]</span></div>",
       "innerBGColor": "#050505", "color": "#d4af37"
     }
