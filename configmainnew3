@@ -91,8 +91,8 @@ var roomstuff = {
       "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/privateofficetop.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The brain of the operation. Behind the glass and the dark wood, Dallas keeps the chaos in check. It's quiet here, but the authority is absolute. <br><b>BY INVITATION ONLY. VANCE IS WATCHING.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ ACCESS WHISPER BOX ]</span></div>",
       "innerBGColor": "#050505", "color": "#d4af37"
-    }
-/* VANCE'S PERIMETER VIEW (Using Blue Pulse for Cool Watchfulness) */
+    },
+
     "parkinglot": {
       "rName": "The Parking Lot",
       "backgroundImage": "https://www.transparenttextures.com/patterns/black-linen.png", // Grittier texture
