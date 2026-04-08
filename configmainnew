@@ -23,6 +23,7 @@ var multiConfig = {
 /* The "Magic" Pulse Animations */
 var goldPulse = "<style>@keyframes gPulse {0%{box-shadow:0 0 5px #d4af37;} 50%{box-shadow:0 0 20px #d4af37; background:rgba(212,175,55,0.2);} 100%{box-shadow:0 0 5px #d4af37;}} .gHot:hover{animation:gPulse 1.5s infinite; border:1px solid #d4af37; border-radius:5px;}</style>";
 var pinkPulse = "<style>@keyframes pPulse {0%{box-shadow:0 0 5px #ff00ff;} 50%{box-shadow:0 0 20px #ff00ff; background:rgba(255,0,255,0.2);} 100%{box-shadow:0 0 5px #ff00ff;}} .pHot:hover{animation:pPulse 1.5s infinite; border:1px solid #ff00ff; border-radius:5px;}</style>";
+var cyanPulse = "<style>@keyframes cPulse {0%{box-shadow:0 0 5px #00ffff;} 50%{box-shadow:0 0 20px #00ffff; background:rgba(0,255,255,0.2);} 100%{box-shadow:0 0 5px #00ffff;}} .cHot:hover{animation:cPulse 1.5s infinite; border:1px solid #00ffff; border-radius:5px;}</style>";
 
 var roomstuff = {
   "rooms": {
@@ -70,9 +71,9 @@ var roomstuff = {
     "afterhours": {
       "rName": "After Hours Club",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%;'><a href='?view=privateoffice' class='pHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;' title='To Private Office'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The main stage is dark, but the night is far from over. In the cool-down glow of the neon, the secrets come out. This is where the chosen few retreat to let the world fade into shadows and static. <br><b>WHAT HAPPENS AFTER HOURS, STAYS AFTER HOURS.</b></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ REQUEST THE SECRET MENU ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#ff00ff"
+      "roomtop": cyanPulse + "<center><div style='position:relative; border:2px solid #00ffff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%;'><a href='?view=privateoffice' class='cHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;' title='To Private Office'></a><div style='padding:20px; color:#00ffff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The main stage is dark, but the night is far from over. In the cool-down glow of the neon, the secrets come out. This is where the chosen few retreat to let the world fade into shadows and static. <br><b>WHAT HAPPENS AFTER HOURS, STAYS AFTER HOURS.</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#00ffff;'><span style='cursor:pointer; border:1px solid #00ffff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ REQUEST THE SECRET MENU ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#00ffff"
     },
 
     "interviewsuite": {
