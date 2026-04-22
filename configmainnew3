@@ -15,7 +15,7 @@ var multiConfig = {
     "backstage",
     "afterhours",
     "interviewsuite",
-    "privateoffice"
+    "privateoffice",
     "parkinglot"
   ],
   "defaultView": "entrance"
@@ -93,12 +93,13 @@ var roomstuff = {
       "innerBGColor": "#050505", "color": "#d4af37"
     },
 
-    "parkinglot": {
+ "parkinglot": {
       "rName": "The Parking Lot",
-      "backgroundImage": "https://www.transparenttextures.com/patterns/black-linen.png", // Grittier texture
-      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMparkinglottop.jpg' style='width:100%;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;' title='Head to Club Entrance'></a><div style='padding:20px; color:#0000ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The perimeter isn't just a parking lot; it’s Vance’s domain. While the music pulses through the walls of the club, the real calm is held out here, under the cool streetlights and the shadows. Vance doesn't need a uniform or a title—his presence is the only warning the neighborhood needs. <br><b>THE PERIMETER IS SECURE. ON MY WATCH.</b></div></div></center>",
-      "roombottom": "<div style='text-align:center; color:#0000ff;'><span style='cursor:pointer; border:1px solid #0000ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SCAN THE HORIZON ]</span></div>",
-      "innerBGColor": "#020202", "color": "#0000ff"
+      "backgroundImage": "https://www.transparenttextures.com/patterns/black-linen.png",
+      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; background:#000; max-width:800px;'><img src='https://soi-designin.hyperchat.com/MMparkinglottop.jpg' style='width:100%; display:block;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;' title='Head to Club Entrance'></a><div style='padding:20px; color:#0000ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The perimeter isn't just a parking lot; it’s Vance’s domain. While the music pulses through the walls of the club, the real calm is held out here, under the cool streetlights and the shadows. Vance doesn't need a uniform or a title—his presence is the only warning the neighborhood needs. <br><b>THE PERIMETER IS SECURE. ON MY WATCH.</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#0000ff; margin-top:15px;'><span style='cursor:pointer; border:1px solid #0000ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SCAN THE HORIZON ]</span></div>",
+      "innerBGColor": "#020202", 
+      "color": "#0000ff"
     }
   }
 };
