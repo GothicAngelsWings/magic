@@ -1,0 +1,109 @@
+var multiConfig = {
+  "THISROOM": "magicmikes",
+  "locationColor": "red",
+  "locationBackground": "black",
+  "currentView": "",
+  "viewList": [
+    "entrance",
+    "clubfloor",
+    "stageedge",
+    "viplounge",
+    "backstage",
+    "afterhours",
+    "interviewsuite",
+    "privateoffice",
+    "parkinglot"
+  ],
+  "defaultView": "entrance"
+};
+
+// 🔥 Pulsing Effects (unchanged)
+var goldPulse = "<style>@keyframes gPulse {0%{box-shadow:0 0 5px #d4af37;} 50%{box-shadow:0 0 20px #d4af37; background:rgba(212,175,55,0.2);} 100%{box-shadow:0 0 5px #d4af37;}} .gHot:hover{animation:gPulse 1.5s infinite; border:1px solid #d4af37; border-radius:5px;}</style>";
+var pinkPulse = "<style>@keyframes pPulse {0%{box-shadow:0 0 5px #ff00ff;} 50%{box-shadow:0 0 20px #ff00ff; background:rgba(255,0,255,0.2);} 100%{box-shadow:0 0 5px #ff00ff;}} .pHot:hover{animation:pPulse 1.5s infinite; border:1px solid #ff00ff; border-radius:5px;}</style>";
+var cyanPulse = "<style>@keyframes cPulse {0%{box-shadow:0 0 5px #00ffff;} 50%{box-shadow:0 0 20px #00ffff; background:rgba(0,255,255,0.2);} 100%{box-shadow:0 0 5px #00ffff;}} .cHot:hover{animation:cPulse 1.5s infinite; border:1px solid #00ffff; border-radius:5px;}</style>";
+var bluePulse = "<style>@keyframes bPulse {0%{box-shadow:0 0 5px #0000ff;} 50%{box-shadow:0 0 20px #0000ff; background:rgba(0,0,255,0.2);} 100%{box-shadow:0 0 5px #0000ff;}} .bHot:hover{animation:bPulse 1.5s infinite; border:1px solid #0000ff; border-radius:5px;}</style>";
+
+var roomstuff = {
+  "rooms": {
+
+    "entrance": {
+      "rName": "The Front Door",
+      "backgroundImage": "linear-gradient(135deg, #000000, #1a1a1a)",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:1px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-magicmik.hyperchat.com/magicmikestop.jpg' style='width:100%;'><a href='?view=clubfloor' class='gHot' style='position:absolute; top:30%; left:35%; width:30%; height:50%; cursor:pointer;' title='Enter the Club'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Beyond these doors lies the heartbeat of the city.<br><b>DRESS TO IMPRESS.</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px;'>[ SIGN THE GUEST LIST ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#d4af37", "link": "#d4af37"
+    },
+
+    "clubfloor": {
+      "rName": "The Main Stage",
+      "backgroundImage": "radial-gradient(circle at center, #1a001a, #000000), repeating-linear-gradient(45deg, rgba(255,0,255,0.08) 0px, rgba(255,0,255,0.08) 2px, transparent 2px, transparent 6px)",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsmainstagetop.jpg' style='width:100%;'><a href='?view=viplounge' class='pHot' style='position:absolute; top:5%; right:5%; width:20%; height:15%; cursor:pointer;' title='To VIP Lounge'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The Kings rule here.<br><b>TONIGHT: THE KINGS OF TAMPA</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px;'>[ MAKE IT RAIN ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link": "#ff00ff"
+    },
+
+    "stageedge": {
+      "rName": "The Edge of the Stage",
+      "backgroundImage": "linear-gradient(180deg, #1a001a, #000000)",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsstageedgetop.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Close enough to feel the heat.<br><b>EYE CONTACT IS MANDATORY</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px;'>[ TOSS A ROSE ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link": "#ff00ff"
+    },
+
+    "viplounge": {
+      "rName": "VIP Lounge",
+      "backgroundImage": "linear-gradient(135deg, #1a1400, #000000), url('https://www.transparenttextures.com/patterns/black-linen.png')",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/VIPLoungeTopuse.jpg' style='width:100%;'><a href='?view=privateoffice' class='gHot' style='position:absolute; top:35%; left:2%; width:15%; height:55%; cursor:pointer;' title='Proprietor Only'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Reserved for the elite.<br><b>TOP-SHELF ONLY.</b></div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px;'>[ CALL BOTTLE SERVICE ]</span></div>",
+      "innerBGColor": "#050505", "color": "#d4af37", "link": "#d4af37"
+    },
+
+    "backstage": {
+      "rName": "Back Stage",
+      "backgroundImage": "linear-gradient(135deg, #1a0010, #000000), url('https://www.transparenttextures.com/patterns/asfalt-dark.png')",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsbackstagetop.jpg' style='width:100%;'><a href='?view=afterhours' class='pHot' style='position:absolute; top:20%; right:5%; width:20%; height:60%; cursor:pointer;' title='Exit to After Hours'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Quiet on set. Performers only.</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px;'>[ SILENCE YOUR PHONE ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link": "#ff00ff"
+    },
+
+    "afterhours": {
+      "rName": "After Hours Club",
+      "backgroundImage": "radial-gradient(circle at top, #001a1a, #000000)",
+      "roomtop": cyanPulse + "<center><div style='position:relative; border:2px solid #00ffff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%;'><a href='?view=privateoffice' class='cHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;' title='To Private Office'></a><div style='padding:20px; color:#00ffff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Secrets come out after hours.</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#00ffff;'><span style='cursor:pointer; border:1px solid #00ffff; padding:5px 15px; font-size:10px;'>[ REQUEST THE SECRET MENU ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#00ffff", "link": "#00ffff"
+    },
+
+    "interviewsuite": {
+      "rName": "The Interview Suite",
+      "backgroundImage": "linear-gradient(135deg, #0a0a0a, #1a001a)",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/Mlounge.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Think you have what it takes?</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px;'>[ SUBMIT PORTFOLIO ]</span></div>",
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link": "#ff00ff"
+    },
+
+    "privateoffice": {
+      "rName": "Dallas's Private Office",
+      "backgroundImage": "linear-gradient(135deg, #1a1400, #000000)",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/privateofficetop.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Dallas is watching. Authority is absolute.</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px;'>[ ACCESS WHISPER BOX ]</span></div>",
+      "innerBGColor": "#050505", "color": "#d4af37", "link": "#d4af37"
+    },
+
+    "parkinglot": {
+      "rName": "The Parking Lot",
+      "backgroundImage": "linear-gradient(135deg, #020202, #0a0a0a), url('https://www.transparenttextures.com/patterns/black-linen.png')",
+      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMparkinglottop.jpg' style='width:100%; display:block;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;' title='Head to Club Entrance'></a><div style='padding:20px; color:#0000ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Vance's domain. The perimeter is secure.</div></div></center>",
+      "roombottom": "<div style='text-align:center; color:#0000ff; margin-top:15px;'><span style='cursor:pointer; border:1px solid #0000ff; padding:5px 15px; font-size:10px;'>[ SCAN THE HORIZON ]</span></div>",
+      "innerBGColor": "#020202", "color": "#0000ff", "link": "#0000ff"
+    }
+
+  }
+};
+
+// ✨ IMPORTANT: Apply backgrounds properly
+function applyRoomBackground(room) {
+  document.body.style.background = room.backgroundImage;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundAttachment = "fixed";
+}
