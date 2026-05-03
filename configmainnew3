@@ -107,3 +107,9 @@ function applyRoomBackground(room) {
   document.body.style.backgroundSize = "cover";
   document.body.style.backgroundAttachment = "fixed";
 }
+// ✨ IMPORTANT: Apply backgrounds properly
+function applyRoomBackground(room) {
+  document.body.style.background = room.backgroundImage;
+  document.body.style.backgroundSize = "cover";
+  document.body.style.backgroundAttachment = "fixed";
+}
