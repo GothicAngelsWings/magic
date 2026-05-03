@@ -5,7 +5,7 @@
 var multiConfig = {
   "THISROOM": "magicmikes",
   "locationColor": "red",
-  "locationBackground": "green",
+  "locationBackground": "black",
   "currentView": "",
   "viewList": [
     "entrance",
@@ -25,6 +25,7 @@ var multiConfig = {
 var goldPulse = "<style>@keyframes gPulse {0%{box-shadow:0 0 5px #d4af37;} 50%{box-shadow:0 0 20px #d4af37; background:rgba(212,175,55,0.2);} 100%{box-shadow:0 0 5px #d4af37;}} .gHot:hover{animation:gPulse 1.5s infinite; border:1px solid #d4af37; border-radius:5px;}</style>";
 var pinkPulse = "<style>@keyframes pPulse {0%{box-shadow:0 0 5px #ff00ff;} 50%{box-shadow:0 0 20px #ff00ff; background:rgba(255,0,255,0.2);} 100%{box-shadow:0 0 5px #ff00ff;}} .pHot:hover{animation:pPulse 1.5s infinite; border:1px solid #ff00ff; border-radius:5px;}</style>";
 var cyanPulse = "<style>@keyframes cPulse {0%{box-shadow:0 0 5px #00ffff;} 50%{box-shadow:0 0 20px #00ffff; background:rgba(0,255,255,0.2);} 100%{box-shadow:0 0 5px #00ffff;}} .cHot:hover{animation:cPulse 1.5s infinite; border:1px solid #00ffff; border-radius:5px;}</style>";
+var bluePulse = "<style>@keyframes bPulse {0%{box-shadow:0 0 5px #0000ff;} 50%{box-shadow:0 0 20px #0000ff; background:rgba(0,0,255,0.2);} 100%{box-shadow:0 0 5px #0000ff;}} .bHot:hover{animation:bPulse 1.5s infinite; border:1px solid #0000ff; border-radius:5px;}</style>";
 
 var roomstuff = {
   "rooms": {
@@ -32,74 +33,73 @@ var roomstuff = {
     "entrance": {
       "rName": "The Front Door",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": goldPulse + "<center><div style='position:relative; border:1px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-magicmik.hyperchat.com/magicmikestop.jpg' style='width:100%;'><a href='?view=clubfloor' class='gHot' style='position:absolute; top:30%; left:35%; width:30%; height:50%; cursor:pointer;' title='Enter the Club'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The line stops here. Beyond these doors lies the heartbeat of the city—where the music is loud, the energy is electric, and the stage belongs to the kings. You aren't just walking into a bar; you're stepping into the spectacle. <br><b>DRESS TO IMPRESS. THE SHOW IS STARTING.</b></div></div></center>",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:1px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-magicmik.hyperchat.com/magicmikestop.jpg' style='width:100%;'><a href='?view=clubfloor' class='gHot' style='position:absolute; top:30%; left:35%; width:30%; height:50%; cursor:pointer;' title='Enter the Club'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The line stops here. Beyond these doors lies the heartbeat of the city—where the music is loud, the energy is electric, and the stage belongs to the kings. <br><b>DRESS TO IMPRESS. THE SHOW IS STARTING.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SIGN THE GUEST LIST ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#d4af37"
+      "innerBGColor": "#0a0a0a", "color": "#d4af37", "link":"#d4af37"
     },
 
     "clubfloor": {
       "rName": "The Main Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsmainstagetop.jpg' style='width:100%;'><a href='?view=viplounge' class='pHot' style='position:absolute; top:5%; right:5%; width:20%; height:15%; cursor:pointer;' title='To VIP Lounge'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Can you feel that? That's the bass hitting your chest. This is where the Kings rule. Every move is a story, and every beat is an invitation to lose yourself in the lights. <br><b>TONIGHT'S LINEUP: THE KINGS OF TAMPA</b></div></div></center>",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsmainstagetop.jpg' style='width:100%;'><a href='?view=viplounge' class='pHot' style='position:absolute; top:5%; right:5%; width:20%; height:15%; cursor:pointer;' title='To VIP Lounge'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Can you feel that? That's the bass hitting your chest. This is where the Kings rule. <br><b>TONIGHT'S LINEUP: THE KINGS OF TAMPA</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ MAKE IT RAIN ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#ff00ff"
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link":"#ff00ff"
     },
 
     "stageedge": {
       "rName": "The Edge of the Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsstageedgetop.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Close enough to feel the heat. From the front row, the performance isn't just a show—it's personal. If you're looking for the best view in the house, you've found it. <br><b>EYE CONTACT IS MANDATORY</b></div></div></center>",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsstageedgetop.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Close enough to feel the heat. From the front row, the performance isn't just a show—it's personal. <br><b>EYE CONTACT IS MANDATORY</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ TOSS A ROSE ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#ff00ff"
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link":"#ff00ff"
     },
 
     "viplounge": {
       "rName": "VIP Lounge",
       "backgroundImage": "https://soi-designin.hyperchat.com/VIPLoungeback.jpg",
-      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/VIPLoungeTopuse.jpg' style='width:100%;'><a href='?view=privateoffice' class='gHot' style='position:absolute; top:35%; left:2%; width:15%; height:55%; cursor:pointer;' title='Proprietor Only'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Escape the crowd without losing the view. Leather, top-shelf pours, and the best seats in the house. This is where the deals are made and the real fun begins after the curtain drops. <br><b>RESERVED FOR THE ELITE.</b></div></div></center>",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/VIPLoungeTopuse.jpg' style='width:100%;'><a href='?view=privateoffice' class='gHot' style='position:absolute; top:35%; left:2%; width:15%; height:55%; cursor:pointer;' title='Proprietor Only'></a><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Escape the crowd without losing the view. Leather, top-shelf pours, and the best seats in the house. <br><b>RESERVED FOR THE ELITE.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ CALL BOTTLE SERVICE ]</span></div>",
-      "innerBGColor": "#050505", "color": "#d4af37"
+      "innerBGColor": "#050505", "color": "#d4af37", "link":"#d4af37"
     },
 
     "backstage": {
       "rName": "Back Stage",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMsbackstagebackground.jpg",
-      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsbackstagetop.jpg' style='width:100%;'><a href='?view=afterhours' class='pHot' style='position:absolute; top:20%; right:5%; width:20%; height:60%; cursor:pointer;' title='Exit to After Hours'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The heavy beat of the music is muffled through the walls. Here, it’s all focus, adrenaline, and the smell of anticipation. The performers catch their breath while the crowd screams for more. <br><b>QUIET ON SET. PERFORMERS ONLY.</b></div></div></center>",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsbackstagetop.jpg' style='width:100%;'><a href='?view=afterhours' class='pHot' style='position:absolute; top:20%; right:5%; width:20%; height:60%; cursor:pointer;' title='Exit to After Hours'></a><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The heavy beat of the music is muffled through the walls. Here, it’s all focus, adrenaline, and anticipation. <br><b>QUIET ON SET. PERFORMERS ONLY.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SILENCE YOUR PHONE ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#ff00ff"
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link":"#ff00ff"
     },
 
     "afterhours": {
       "rName": "After Hours Club",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": cyanPulse + "<center><div style='position:relative; border:2px solid #00ffff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%;'><a href='?view=privateoffice' class='cHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;' title='To Private Office'></a><div style='padding:20px; color:#00ffff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The main stage is dark, but the night is far from over. In the cool-down glow of the neon, the secrets come out. This is where the chosen few retreat to let the world fade into shadows and static. <br><b>WHAT HAPPENS AFTER HOURS, STAYS AFTER HOURS.</b></div></div></center>",
+      "roomtop": cyanPulse + "<center><div style='position:relative; border:2px solid #00ffff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMsafterhoursclub.jpg' style='width:100%;'><a href='?view=privateoffice' class='cHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;' title='To Private Office'></a><div style='padding:20px; color:#00ffff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The main stage is dark, but the night is far from over. In the cool-down glow of the neon, the secrets come out. <br><b>WHAT HAPPENS AFTER HOURS, STAYS AFTER HOURS.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#00ffff;'><span style='cursor:pointer; border:1px solid #00ffff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ REQUEST THE SECRET MENU ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#00ffff"
+      "innerBGColor": "#0a0a0a", "color": "#00ffff", "link":"#00ffff"
     },
 
     "interviewsuite": {
       "rName": "The Interview Suite",
       "backgroundImage": "https://soi-designin.hyperchat.com/MMmainback.png",
-      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/Mlounge.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Think you have what it takes to join the Kings? Under the blue glow of the neon, careers are born and legends are vetted. Bring your best, or don't bother walking in. <br><b>SHOWCASE YOUR TALENT.</b></div></div></center>",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/Mlounge.jpg' style='width:100%;'><div style='padding:20px; color:#ff00ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>Think you have what it takes to join the Kings? Careers are born and legends are vetted under the neon. <br><b>SHOWCASE YOUR TALENT.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#ff00ff;'><span style='cursor:pointer; border:1px solid #ff00ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SUBMIT PORTFOLIO ]</span></div>",
-      "innerBGColor": "#0a0a0a", "color": "#ff00ff"
+      "innerBGColor": "#0a0a0a", "color": "#ff00ff", "link":"#ff00ff"
     },
 
-   "privateoffice": {
+    "privateoffice": {
       "rName": "Dallas's Private Office",
       "backgroundImage": "https://soi-designin.hyperchat.com/e903ad385afdcd6e91ff4df47b697722.jpg",
-      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000;'><img src='https://soi-designin.hyperchat.com/privateofficetop.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The brain of the operation. Behind the glass and the dark wood, Dallas keeps the chaos in check. It's quiet here, but the authority is absolute. <br><b>BY INVITATION ONLY. VANCE IS WATCHING.</b></div></div></center>",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/privateofficetop.jpg' style='width:100%;'><div style='padding:20px; color:#d4af37; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The brain of the operation. Dallas keeps the chaos in check. Authority is absolute here. <br><b>BY INVITATION ONLY. VANCE IS WATCHING.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#d4af37;'><span style='cursor:pointer; border:1px solid #d4af37; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ ACCESS WHISPER BOX ]</span></div>",
-      "innerBGColor": "#050505", "color": "#d4af37"
+      "innerBGColor": "#050505", "color": "#d4af37", "link":"#d4af37"
     },
 
- "parkinglot": {
+    "parkinglot": {
       "rName": "The Parking Lot",
       "backgroundImage": "https://www.transparenttextures.com/patterns/black-linen.png",
-      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; background:#000; max-width:800px;'><img src='https://soi-designin.hyperchat.com/MMparkinglottop.jpg' style='width:100%; display:block;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;' title='Head to Club Entrance'></a><div style='padding:20px; color:#0000ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The perimeter isn't just a parking lot; it’s Vance’s domain. While the music pulses through the walls of the club, the real calm is held out here, under the cool streetlights and the shadows. Vance doesn't need a uniform or a title—his presence is the only warning the neighborhood needs. <br><b>THE PERIMETER IS SECURE. ON MY WATCH.</b></div></div></center>",
+      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; background:#000; max-width:850px;'><img src='https://soi-designin.hyperchat.com/MMparkinglottop.jpg' style='width:100%; display:block;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;' title='Head to Club Entrance'></a><div style='padding:20px; color:#0000ff; font-size:13px; line-height:1.6; letter-spacing:1px; border-top:1px solid #333;'>The perimeter is Vance’s domain. Streetlights and shadows provide a calm away from the bass. <br><b>THE PERIMETER IS SECURE. ON MY WATCH.</b></div></div></center>",
       "roombottom": "<div style='text-align:center; color:#0000ff; margin-top:15px;'><span style='cursor:pointer; border:1px solid #0000ff; padding:5px 15px; font-size:10px; text-transform:uppercase;'>[ SCAN THE HORIZON ]</span></div>",
-      "innerBGColor": "#020202", 
-      "color": "#0000ff"
+      "innerBGColor": "#020202", "color": "#0000ff", "link":"#0000ff"
     }
   }
 };
