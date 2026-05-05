@@ -1,0 +1,59 @@
+var roomstuff = {
+  "rooms": {
+
+    "entrance": {
+      "rName": "The Front Door",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:1px solid #d4af37; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEENTRANCEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEFRONTDOOR.png' style='width:100%;'><a href='?view=clubfloor' class='gHot' style='position:absolute; top:30%; left:35%; width:30%; height:50%; cursor:pointer;'></a><div style='padding:20px; color:#d4af37;'>Beyond these doors lies the heartbeat of the city.<br><b>DRESS TO IMPRESS.</b></div></div></center>",
+      "roombottom": ""
+    },
+
+    "clubfloor": {
+      "rName": "The Main Stage",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKESMAINSTAGEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEMAINSTAGE.png' style='width:100%;'><a href='?view=viplounge' class='pHot' style='position:absolute; top:5%; right:5%; width:20%; height:15%; cursor:pointer;'></a><div style='padding:20px; color:#ff00ff;'>The Kings rule here.<br><b>TONIGHT: THE KINGS OF TAMPA</b></div></div></center>",
+      "roombottom": ""
+    },
+
+    "stageedge": {
+      "rName": "The Edge of the Stage",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEEDGEOFTHESTAGEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEEDGEOFTHESTAGE.png' style='width:100%;'><div style='padding:20px; color:#ff00ff;'>Close enough to feel the heat.<br><b>EYE CONTACT IS MANDATORY</b></div></div></center>",
+      "roombottom": ""
+    },
+
+    "viplounge": {
+      "rName": "VIP Lounge",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEVIPLOUNGEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEVIPLOUNGE.png' style='width:100%;'><a href='?view=privateoffice' class='gHot' style='position:absolute; top:35%; left:2%; width:15%; height:55%; cursor:pointer;'></a><div style='padding:20px; color:#d4af37;'>Reserved for the elite.<br><b>TOP-SHELF ONLY.</b></div></div></center>",
+      "roombottom": ""
+    },
+
+    "backstage": {
+      "rName": "Back Stage",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEBACKSTAGEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEBACKSTAGE.png' style='width:100%;'><a href='?view=afterhours' class='pHot' style='position:absolute; top:20%; right:5%; width:20%; height:60%; cursor:pointer;'></a><div style='padding:20px; color:#ff00ff;'>Quiet on set. Performers only.</div></div></center>",
+      "roombottom": ""
+    },
+
+    "afterhours": {
+      "rName": "After Hours Club",
+      "roomtop": cyanPulse + "<center><div style='position:relative; border:2px solid #00ffff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEAFTERHOURSBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEAFTERHOURS.png' style='width:100%;'><a href='?view=privateoffice' class='cHot' style='position:absolute; top:20%; left:40%; width:20%; height:40%; cursor:pointer;'></a><div style='padding:20px; color:#00ffff;'>Secrets come out after hours.</div></div></center>",
+      "roombottom": ""
+    },
+
+    "interviewsuite": {
+      "rName": "The Interview Suite",
+      "roomtop": pinkPulse + "<center><div style='position:relative; border:2px solid #ff00ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEINTERVIEWSUITEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKEINTERVIEWSUITE.png' style='width:100%;'><div style='padding:20px; color:#ff00ff;'>Think you have what it takes?</div></div></center>",
+      "roombottom": ""
+    },
+
+    "privateoffice": {
+      "rName": "Dallas's Private Office",
+      "roomtop": goldPulse + "<center><div style='position:relative; border:2px solid #d4af37; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEPRIVATEOFFICEBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKESDALLASOFFICE.png' style='width:100%;'><div style='padding:20px; color:#d4af37;'>Dallas is watching. Authority is absolute.</div></div></center>",
+      "roombottom": ""
+    },
+
+    "parkinglot": {
+      "rName": "The Parking Lot",
+      "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEPARKINGLOTBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKESPARKINGLOT.png' style='width:100%;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;'></a><div style='padding:20px; color:#0000ff;'>Vance's domain. The perimeter is secure.</div></div></center>",
+      "roombottom": ""
+    }
+
+  }
+};
