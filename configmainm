@@ -1,10 +1,3 @@
-/* 1. PULSE ANIMATIONS (Must be at the top) */
-var goldPulse = "<style>@keyframes gPulse {0%{box-shadow:0 0 5px #d4af37;} 50%{box-shadow:0 0 20px #d4af37; background:rgba(212,175,55,0.2);} 100%{box-shadow:0 0 5px #d4af37;}} .gHot:hover{animation:gPulse 1.5s infinite; border:1px solid #d4af37; border-radius:5px;}</style>";
-var pinkPulse = "<style>@keyframes pPulse {0%{box-shadow:0 0 5px #ff00ff;} 50%{box-shadow:0 0 20px #ff00ff; background:rgba(255,0,255,0.2);} 100%{box-shadow:0 0 5px #ff00ff;}} .pHot:hover{animation:pPulse 1.5s infinite; border:1px solid #ff00ff; border-radius:5px;}</style>";
-var cyanPulse = "<style>@keyframes cPulse {0%{box-shadow:0 0 5px #00ffff;} 50%{box-shadow:0 0 20px #00ffff; background:rgba(0,255,255,0.2);} 100%{box-shadow:0 0 5px #00ffff;}} .cHot:hover{animation:cPulse 1.5s infinite; border:1px solid #00ffff; border-radius:5px;}</style>";
-var bluePulse = "<style>@keyframes bPulse {0%{box-shadow:0 0 5px #0000ff;} 50%{box-shadow:0 0 20px #0000ff; background:rgba(0,0,255,0.2);} 100%{box-shadow:0 0 5px #0000ff;}} .bHot:hover{animation:bPulse 1.5s infinite; border:1px solid #0000ff; border-radius:5px;}</style>";
-
-/* 2. CONFIGURATION */
 var multiConfig = {
   "THISROOM": "magicmikes",
   "locationColor": "red",
