@@ -79,6 +79,5 @@ var roomstuff = {
       "roomtop": bluePulse + "<center><div style='position:relative; border:2px solid #0000ff; overflow:hidden; max-width:850px; background:url(https://soi-magicmik.hyperchat.com/MIKEPARKINGLOTBACK.png) center/cover no-repeat;'><img src='https://soi-magicmik.hyperchat.com/MIKESPARKINGLOT.png' style='width:100%;'><a href='?view=entrance' class='bHot' style='position:absolute; top:35%; left:40%; width:20%; height:30%; cursor:pointer;'></a><div style='padding:20px; color:#0000ff;'>Vance's domain. The perimeter is secure.</div></div></center>",
       "roombottom": ""
     }
-
   }
 };
